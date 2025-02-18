@@ -32,25 +32,29 @@ function CountdownTimer() {
   }, []);
 
   return (
-    <div>
+    <>
       <div className="container">
-      <h1 className="heading">Countdown to My BIRTHDAY</h1>
-      <div className="timer">
-        <div className="box">
-          <span>{timeLeft.days}</span> <br /> Days
-        </div>
-        <div className="box">
-          <span>{timeLeft.hours}</span> <br /> Hours
-        </div>
-        <div className="box">
-          <span>{timeLeft.minutes}</span> <br /> Mins
-        </div>
-        <div className="box">
-          <span>{timeLeft.seconds}</span> <br /> Sec
+        <h1 className="heading">MY BIRTHDAY COUNTDOWN</h1>
+        <div className="timer">
+          <span>
+            {timeLeft.days}
+            <p>Days</p>
+          </span>
+          <span>
+            {timeLeft.hours}
+            <p>Hours</p>
+          </span>
+          <span>
+            {timeLeft.minutes}
+            <p>Mins</p>
+          </span>
+          <span>
+            {timeLeft.seconds}
+            <p>Secs</p>
+          </span>
         </div>
       </div>
-    </div>
-    </div>
+    </>
   );
 }
 
