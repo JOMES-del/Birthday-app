@@ -4,7 +4,7 @@ import "./CountdownTimer.jsx";  // Import the CountdownTimer component
 
 function CountdownTimer() {
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2025-04-17T00:00:00"); // Set your birthday date
+    const targetDate = new Date("2025-05-28T00:00:00"); // Set your birthday date
     const now = new Date();
     const difference = targetDate - now;
 
